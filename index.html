@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/b89a0669a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Wireframe</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          type="search"
+          class="form-control-small"
+          autofocus="on"
+          id="city-input"
+          aria-describedby="textHelp"
+          placeholder="City search"
+          autocomplete="off"
+        />
+        <input type="submit" value="🔍" class="btn btn-primary shadow-sm" />
+        <button class="btn btn-success shadow-sm" id="current-location-button">
+          Current
+        </button>
+      </form>
+    </div>
+    <div class="current">
+      <i class="fa-solid fa-cloud cloud-icon"></i>
+      <span class="current-temp" id="current-temp"> 17</span
+      ><span class="units"
+        ><a href="#" id="cel-link">°C</a>
+        |
+        <a href="#" id="fahr-link">°F</a></span
+      >
+      <div class="climate">
+      
+        <div>Humidity:<span class="humidity" id="humidity"></span>%</div>
+        <div>Wind:<span class="wind" id="wind"></span>km/h</div>
+
+        <div class="vl"></div>
+      </div>
+      <div class="weather-topic">
+        <div class="city" id="city"></div>
+        <div class="datetime" id="datetime">Friday 15:12</div>
+        <div class="forecast" id="forecast"></div>
+      </div>
+    </div>
+    <div class="realfeel">Real feel:<span id="realfeel"> -3</span>°</div>
+
+    <div class="row">
+      <div class="col-2">
+        <div class="day-week">WED</div>
+        <div class="icon">🌨</div>
+        <div class="temprature">1° -1°</div>
+      </div>
+      <div class="col-2">
+        <div class="day-week">THU</div>
+        <div class="icon">⛅️</div>
+        <div class="temprature">-2° -1°</div>
+      </div>
+      <div class="col-sm-2">
+        <div class="day-week">FRI</div>
+        <div class="icon">🌨</div>
+        <div class="temprature">-2° -1°</div>
+      </div>
+      <div class="col-sm-2">
+        <div class="day-week icon">SAT</div>
+        <div class="icon">🌨</div>
+        <div class="temprature">-1° -1°</div>
+      </div>
+      <div class="col-sm-2">
+        <div class="day-week">SUN</div>
+        <div class="icon">🌨</div>
+        <div class="temprature">-3° -1°</div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
