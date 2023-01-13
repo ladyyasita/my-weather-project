@@ -30,7 +30,7 @@
           placeholder="City search"
           autocomplete="off"
         />
-        <input type="submit" value="🔍" class="btn btn-third shadow-sm" />
+        <input type="submit" value="🔍" class="btn btn-primary shadow-sm" />
         <button class="btn btn-success shadow-sm" id="current-location-button">
           Current
         </button>
@@ -50,10 +50,14 @@
 
         <div class="vl"></div>
       </div>
-      <div class="weather-topic">
-        <div class="city" id="city"></div>
-        <div class="datetime" id="datetime">Friday 15:12</div>
-        <div class="forecast" id="forecast"></div>
+      <div class="row">
+        <div class="col-12">
+          <div class="weather-topic">
+            <div class="city" id="city"></div>
+            <div class="datetime" id="datetime"></div>
+            <div class="forecast" id="forecast"></div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="realfeel">Real feel:<span id="realfeel"> -3</span>°</div>
