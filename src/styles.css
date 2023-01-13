@@ -34,8 +34,6 @@ h1 {
 }
 .weather-topic {
   position: relative;
-  left: 450px;
-  top: -100px;
   line-height: 30px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
