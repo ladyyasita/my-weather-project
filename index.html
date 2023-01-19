@@ -20,6 +20,7 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app">
       <form class="search-form" id="search-form">
         <input
           type="search"
@@ -37,6 +38,7 @@
       </form>
     </div>
     <div class="row">
+      <div class="col-1">
       <div class="current">
         <i class="fa-solid fa-cloud cloud-icon"></i>
         <span class="current-temp" id="current-temp"> 17</span
@@ -45,14 +47,17 @@
           |
           <a href="#" id="fahr-link">°F</a></span
         >
+        </div>
+       <div class="col-3">
         <div class="climate">
           <div>Humidity:<span class="humidity" id="humidity"></span>%</div>
           <div>Wind:<span class="wind" id="wind"></span>km/h</div>
-
+</div>
+</div> 
+<div class="col-6">
           <div class="vl"></div>
-        </div>
-
-        <div class="col-12">
+        
+       
           <div class="weather-topic">
             <div class="city" id="city"></div>
             <div class="datetime" id="datetime"></div>
@@ -89,7 +94,10 @@
         <div class="icon">🌨</div>
         <div class="temprature">-3° -1°</div>
       </div>
+      </div>
     </div>
+    </div> 
+    </body>
     <small
       ><a
         href="https://github.com/ladyyasita/my-weather-project"
